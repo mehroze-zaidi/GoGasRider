@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/profileBack"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:src="@drawable/back_arrow_img" />
+
+            <com.example.gogasrider.Customs.BoldText
+                android:id="@+id/profileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileBack"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:fontFamily="@font/montserrat"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/profileCenter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_below="@+id/profileTitle"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_26sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:src="@drawable/profile_pic" />
+
+            <ImageView
+                android:id="@+id/circleIv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_below="@+id/profileTitle"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_26sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:src="@drawable/gaping_circle_img" />
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/profileText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileCenter"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_60sdp"
+                android:text="Upload new pic?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp" />
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileText"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginRight="@dimen/_60sdp"
+                android:text="Remove"
+                android:textAlignment="center"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/_8ssp" />
+
+            <ScrollView
+                android:id="@+id/main_scroll_ca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/remove">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/homeSv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/personalinfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_36sdp"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:gravity="start|center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.example.gogasrider.Customs.ThinText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerInParent="true"
+                                android:text="@string/updatePersonal"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10ssp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_8sdp"
+                                android:layout_height="@dimen/_8sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/right_yellow_arrow" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/_22sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_22sdp"
+                            android:background="@color/light_grey2" />
+
+                        <RelativeLayout
+                            android:id="@+id/carInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_36sdp"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:gravity="start|center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.example.gogasrider.Customs.ThinText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerInParent="true"
+                                android:text="@string/updateTank"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10ssp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_8sdp"
+                                android:layout_height="@dimen/_8sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/right_yellow_arrow" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/_22sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_22sdp"
+                            android:background="@color/light_grey2" />
+
+                        <RelativeLayout
+                            android:id="@+id/changePass"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_36sdp"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:gravity="start|center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.example.gogasrider.Customs.ThinText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerInParent="true"
+                                android:text="@string/updateWallet"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10ssp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_8sdp"
+                                android:layout_height="@dimen/_8sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/right_yellow_arrow" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

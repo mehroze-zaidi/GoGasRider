@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeBtn">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backArrowIv"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:src="@drawable/back_arrow_img" />
+
+
+            <com.example.gogasrider.Customs.BoldText
+                android:id="@+id/waitingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/backArrowIv"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="47dp"
+                android:text="@string/waiting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_400sdp"
+                android:layout_below="@+id/waitingTv">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/waiting_screen_img" />
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/skipTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:fontFamily="@font/montserrat"
+        android:letterSpacing="0.01"
+        android:text="@string/skip"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@+id/skipTv"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/yellow_btn_bg"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/Go_to"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+

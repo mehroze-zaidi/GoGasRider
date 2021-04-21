@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmRideScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/trackRideBtn">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/backArrowIv"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:src="@drawable/back_arrow_img" />
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/viewWalletTv"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/profilePicIv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/dark_yellow_bg"
+                android:gravity="center"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_6sdp"
+                android:text="@string/cancelRide"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp" />
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_below="@+id/backArrowIv"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="220dp"
+                tools:context=".MapsActivity" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_below="@+id/map"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="-205dp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@color/yellow"
+                app:cardCornerRadius="@dimen/_3sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent">
+
+                    <ImageView
+                        android:id="@+id/profilePic3Iv"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:src="@drawable/profile_pic" />
+
+                    <ImageView
+                        android:id="@+id/chatImg"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:src="@drawable/chat_icon" />
+
+                    <com.example.gogasrider.Customs.ThinText
+                        android:id="@+id/zeeshanTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:layout_toEndOf="@+id/profilePic3Iv"
+                        android:text="Zeeshan"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <com.example.gogasrider.Customs.ThinText
+                        android:id="@+id/addressTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/profilePic3Iv"
+                        android:text="House No 12, Lane 3 Street of Uzu, California"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9ssp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/profilePic3Iv"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@color/light_grey3" />
+                    <com.example.gogasrider.Customs.ThinText
+                        android:id="@+id/timeTv"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/profilePicIv"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:background="@drawable/dark_yellow_bg"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_6sdp"
+                        android:paddingEnd="@dimen/_6sdp"
+                        android:text="5 Mins"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"/>
+
+
+                    <com.example.gogasrider.Customs.ThinText
+                        android:id="@+id/onTheWayTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/onTheWay"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"/>
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/trackRideBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@+id/buyTanksTv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/yellow_btn_bg"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/trackRide"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

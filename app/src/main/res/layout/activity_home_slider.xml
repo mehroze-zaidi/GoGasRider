@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/circles">
+
+    <ImageView
+        android:id="@+id/flipMenuIv"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/flip_menu_icon" />
+
+    <ImageView
+        android:id="@+id/profilePic2Iv"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:src="@drawable/profile_pic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/flipMenuIv"
+        android:layout_marginTop="0dp"
+        android:layout_above="@+id/logoutBtn">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.gogasrider.Customs.BoldText
+                android:id="@+id/homeTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:gravity="center_vertical"
+                android:text="@string/home"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/tankInformationTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/homeTv"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                android:text="@string/TankInformation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/walletTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/tankInformationTv"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:text="@string/wallet"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/profileTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/walletTv"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                android:text="@string/Profile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/notificationTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/profileTv"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                android:text="@string/Notification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"/>
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/termAndConditionTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/notificationTv"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                android:text="@string/TermCondition"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"/>
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/privacyPolicyTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/termAndConditionTv"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                android:text="@string/privacyPolicy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@+id/buyTanksTv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/yellow_btn_bg"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/logOut"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

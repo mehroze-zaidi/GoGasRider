@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gogasrider">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +11,46 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoGasRider">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ViewEarningScreen"></activity>
+        <activity android:name=".Wallet" />
+        <activity android:name=".UpdateTankScreen" />
+        <activity android:name=".UpdateTanl" />
+        <activity android:name=".UpdateProfileScreen" />
+        <activity android:name=".ProfileScreen" />
+        <activity android:name=".EndRideScreen" />
+        <activity android:name=".RideEndScreen" />
+        <activity android:name=".RequestScreen" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".Chat" />
+        <activity android:name=".TrackScreen" />
+        <activity android:name=".ConfirmRideScreen" />
+        <activity android:name=".EmptyState" />
+        <activity android:name=".HomeSlider" />
+        <activity android:name=".UploadImages" />
+        <activity android:name=".HomeAlphaScreen" />
+        <activity android:name=".HomeScreen" />
+        <activity android:name=".WaitingScreen" />
+        <activity android:name=".PrivacyPolicyScreen" />
+        <activity android:name=".TermAndConditionScreen" />
+        <activity android:name=".SignUpScreen" />
+        <activity android:name=".OTPScreen" />
+        <activity android:name=".LoginScreen" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/apiKey" />
     </application>
 
 </manifest>

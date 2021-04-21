@@ -1,0 +1,271 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backArrowIv"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/back_arrow_img" />
+
+
+    <ImageView
+        android:id="@+id/Iv"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_90sdp"
+        android:layout_marginLeft="@dimen/_80sdp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/top_curve_img" />
+
+    <com.example.gogasrider.Customs.BoldText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/backArrowIv"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="29dp"
+        android:text="Setup your profile"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/signUpBtn"
+        android:layout_below="@+id/Iv">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_230sdp"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <EditText
+                    android:id="@+id/nameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/fullName"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/email"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:id="@+id/idNoEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/national_id_no"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:id="@+id/licenseNoEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/license_no"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_below="@+id/linear1"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/frontTankIv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/front_tank_img" />
+
+                <ImageView
+                    android:id="@+id/backTankIv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/back_tank_img" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/linear2"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="horizontal"><![CDATA[
+
+
+                />
+
+                ]]>
+
+                <CheckBox
+                    android:id="@+id/privacyPolicyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="56dp"
+
+                    android:fontFamily="@font/montserrat"
+                    android:text="I agree to the"
+                    android:textSize="@dimen/_8sdp" />
+
+                <com.example.gogasrider.Customs.ThinText
+                    android:id="@+id/termAndConditionTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_9ssp"
+                    android:layout_toEndOf="@+id/privacyPolicyCheckBox"
+                    android:text=" Term and Condition"
+                    android:textColor="@color/yellow" />
+
+                <com.example.gogasrider.Customs.ThinText
+                    android:id="@+id/textView4"
+                    android:textSize="@dimen/_9sdp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/termAndConditionTv"
+                    android:text=" and" />
+
+                <com.example.gogasrider.Customs.ThinText
+                    android:id="@+id/privacyPolicyTv"
+                    android:textSize="@dimen/_9ssp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Privacy Policy"
+                    android:layout_toEndOf="@id/textView4"
+                    android:textColor="@color/yellow" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/buyTanksTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:fontFamily="@font/montserrat"
+        android:letterSpacing="0.01"
+        android:text="@string/doYouWantToBuyTanks"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@+id/buyTanksTv"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/yellow_btn_bg"
+        android:fontFamily="@font/montserrat"
+        android:text="Sign up "
+        android:textColor="@android:color/white" />
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".SignUpScreen">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/relativeLayout"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHeight_percent="0.2"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintWidth_percent="1">-->
+
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:weightSum="4"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHeight_percent="0.4"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"-->
+    <!--        app:layout_constraintWidth_percent="1">-->
+
+
+    <!--    </LinearLayout>-->
+
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->

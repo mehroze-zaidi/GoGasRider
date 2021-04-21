@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content">-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backArrowIv"
+        android:layout_marginTop="@dimen/_95sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/mobNoEt"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/Enter_Mobile_Number"
+                android:inputType="number"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobNoEt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="@+id/mobNoEt"
+                app:layout_constraintStart_toStartOf="@+id/mobNoEt"
+                app:layout_constraintTop_toBottomOf="@+id/mobNoEt">
+
+                <Button
+                    android:id="@+id/continueBtn"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellow_btn_bg"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/continuee"
+                    android:textColor="@android:color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:letterSpacing="0.01"
+                android:text="@string/Welcome_Back"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"
+
+                android:textStyle="bold" />
+
+
+            <com.example.gogasrider.Customs.ThinText
+
+
+                android:id="@+id/signUptTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/Not_a_user"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/backArrowIv"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/back_arrow_img" />
+
+    <ImageView
+        android:id="@+id/Iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/_80sdp"
+        android:src="@drawable/top_curve_img" />
+
+
+</RelativeLayout>

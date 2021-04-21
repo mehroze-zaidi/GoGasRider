@@ -1,3 +1,113 @@
 <resources>
     <string name="app_name">Go Gas Rider</string>
+
+    //splash Screen
+
+    <string name="Book_your_fuel">Book your fuel or schedule in your \nlocality</string>
+    <string name="Get_Started">Get Started</string>
+
+    //Login Screen
+    <string name="Enter_Mobile_Number">Enter Mobile Number</string>
+    <string name="Welcome_Back">Welcome Back !</string>
+    <string name="continuee">continue</string>
+    <string name="Not_a_user">Not a user ? Sign up</string>
+
+    //otp screen strings
+    <string name="title">Enter OTP</string>
+    <string name="description">"Enter OTP which we are just sending\n               to your +931 219*******9"</string>
+    <string name="loginButton">log in </string>
+
+
+    // sign up screen strings
+
+    <string name="fullName">Full Name</string>
+    <string name="email">  Email Address  </string>
+    <string name="national_id_no">Enter National ID No </string>
+    <string name="license_no"> Enter License No </string>
+    <string name="doYouWantToBuyTanks"> Do you want to buy tanks ? </string>
+    <string name="signUp">Sign Up</string>
+
+    //Term and condition and privacy policy screen
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="termAndConditionDescription">Et eu culpa et aliqua ut quis labore tempor aliqua ipsum aliquip et. Ea adipisicing minim ipsum incididunt cillum laboris minim non pariatur mollit mollit tempor nulla. Sunt enim excepteur ad cupidatat. Exercitation culpa est qui ut eu aliqua aute. Duis officia deserunt sint id occaecat magna. Laboris irure aute est laboris exercitation ipsum irure ex.\n\n
+
+Aute cillum velit non amet in elit id magna esse sint quis aute duis. Commodo proident nulla esse mollit cupidatat tempor aliquip. Sint cillum officia enim ea non cupidatat labore dolore.\n\n
+
+ Sint cillum officia enim ea non cupidatat labore dolore.\n\n
+    Et eu culpa et aliqua ut quis labore tempor aliqua ipsum aliquip et. Ea adipisicing minim ipsum incididunt cillum laboris minim non pariatur mollit mollit tempor nulla. Sunt enim excepteur ad cupidatat. Exercitation culpa est qui ut eu aliqua aute. Duis officia deserunt sint id occaecat magna. Laboris irure aute est laboris exercitation ipsum irure ex.\n\n
+
+
+ Sint cillum officia enim ea non cupidatat labore dolore.</string>
+
+    <string name="privacyPolicyDescription">Et eu culpa et aliqua ut quis labore tempor aliqua ipsum aliquip et. Ea adipisicing minim ipsum incididunt cillum laboris minim non pariatur mollit mollit tempor nulla. Sunt enim excepteur ad cupidatat. Exercitation culpa est qui ut eu aliqua aute. Duis officia deserunt sint id occaecat magna. Laboris irure aute est laboris exercitation ipsum irure ex.\n\n
+
+Aute cillum velit non amet in elit id magna esse sint quis aute duis. Commodo proident nulla esse mollit cupidatat tempor aliquip. Sint cillum officia enim ea non cupidatat labore dolore.\n\n
+
+ Sint cillum officia enim ea non cupidatat labore dolore.\n\n
+    Et eu culpa et aliqua ut quis labore tempor aliqua ipsum aliquip et. Ea adipisicing minim ipsum incididunt cillum laboris minim non pariatur mollit mollit tempor nulla. Sunt enim excepteur ad cupidatat. Exercitation culpa est qui ut eu aliqua aute. Duis officia deserunt sint id occaecat magna. Laboris irure aute est laboris exercitation ipsum irure ex.\n\n
+
+
+ Sint cillum officia enim ea non cupidatat labore dolore.</string>
+
+
+    //Waiting Screen
+
+    <string name="waiting">Waiting</string>
+    <string name="Go_to">Go to Home</string>
+    <string name="skip">Skip</string>
+
+    //Home
+
+    <string name="Active_Balance">Active Balance</string>
+    <string name="dolar">$ 4,000</string>
+    <string name="view_wallet">  View Wallet  </string>
+    <string name="earning">Earning</string>
+    <string name="this_month">This Month</string>
+    <string name="money">$4055.56</string>
+    <string name="thisMonth">This Month</string>
+    <string name="moreEarningThanLAstMonth">68.2% more earnings than \nlast month </string>
+    <string name="tankOverview">Tank Overview</string>
+    <string name="fullTankCapacity">Full Tank Capacity</string>
+    <string name="TodayInHand">Today In Hand</string>
+    <string name="overviewTank">This is the overview of your tank  according\n
+to the pic and information you upload</string>
+    //Upload Images Screen
+    <string name="uploadImages">Upload Images</string>
+    <string name="uploadDetails">Upload Details</string>
+    <string name="noOfGallon">No Of Gallon</string>
+
+    //home slider screen
+    <string name="logOut">LOGOUT</string>
+    <string name="home">Home</string>
+
+    <string name="TankInformation">Tank Information</string>
+    <string name="wallet">Wallet</string>
+    <string name="Profile">Profile</string>
+    <string name="Notification">Notification</string>
+    <string name="TermCondition">Term &amp; Condition</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+
+
+    //Empty Screen Strings
+    <string name="OhhYourProfile">Ohh Your Profile is underway to admin,\n
+see you soon or you can buy tank</string>
+    // Confirm Screen
+    <string name="apiKey">AIzaSyBlRmgs5ti_J3r9V3uJCMhf4xoj0WVgNdw</string>
+    <string name="cancelRide">Cancel Ride</string>
+    <string name="trackRide">Track Ride</string>
+    <string name="onTheWay"> On the way to Zeeshan Home</string>
+
+
+    //Request Screen
+    <string name="Zeeshan_requesting_2">Zeeshan requesting 2 gallon of\n\t\t\tPetrol (Fuel)</string>
+    <string name="accept">Accept</string>
+
+    //profile screen strings
+    <string name="updatePersonal">Update Personal Information</string>
+    <string name="updateTank">Update Tank Information</string>
+    <string name="updateWallet">Update Wallet</string>
+    <string name="viewEarning">View Earning </string>
+    <string name="EarningIn">Earning in MArch </string>
+
 </resources>

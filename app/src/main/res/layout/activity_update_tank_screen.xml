@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:id="@+id/back_pi"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:src="@drawable/back_arrow_img" />
+
+    <com.example.gogasrider.Customs.BoldText
+        android:id="@+id/title_pi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_pi"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:text="@string/updateTank"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <ScrollView
+        android:id="@+id/main_scroll_ca"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/update_now_pi"
+        android:layout_below="@id/title_pi">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/homeSv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/frontTankIv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/front_tank_img" />
+
+                <ImageView
+                    android:id="@+id/backTankIv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_weight="1"
+
+                    android:src="@drawable/back_tank_img" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <com.example.gogasrider.Customs.BoldText
+        android:id="@+id/update_now_pi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/yellow_btn_bg"
+        android:gravity="center"
+        android:text="Update Now"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+</RelativeLayout>

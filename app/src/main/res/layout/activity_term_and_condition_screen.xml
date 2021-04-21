@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backArrowIv"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/back_arrow_img" />
+
+
+    <com.example.gogasrider.Customs.BoldText
+        android:id="@+id/termAndConditionHeadingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/backArrowIv"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="47dp"
+        android:text="Term And Condition"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/signUpBtn"
+        android:layout_below="@+id/termAndConditionHeadingTv">
+
+
+        <com.example.gogasrider.Customs.ThinText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_13sdp"
+            android:text="@string/termAndConditionDescription"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/buyTanksTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:fontFamily="@font/montserrat"
+        android:letterSpacing="0.01"
+        android:text="@string/deny"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@+id/buyTanksTv"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/yellow_btn_bg"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/allow"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
+
+

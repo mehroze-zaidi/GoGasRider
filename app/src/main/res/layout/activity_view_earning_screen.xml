@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backArrowIv"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/back_arrow_img" />
+
+    <com.example.gogasrider.Customs.BoldText
+        android:id="@+id/viewEarningTv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/backArrowIv"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="29dp"
+        android:text="@string/viewEarning"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_below="@+id/viewEarningTv">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@color/lighter_grey">
+
+
+                <com.example.gogasrider.Customs.BoldText
+                    android:id="@+id/dollarTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:text="$ 320"
+                    android:textColor="@color/viewEarningScreenTvBg"
+                    android:textSize="@dimen/_40sdp" />
+
+                <com.example.gogasrider.Customs.ThinText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dollarTv"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/EarningIn"
+                    android:textColor="@color/viewEarningScreenTvBg"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/dateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative1"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="Mar 2021"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/rightArrowIv"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_below="@id/relative1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_43sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:src="@drawable/right_arrow_img"
+                android:tint="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_below="@+id/relative1"
+                android:layout_marginTop="@dimen/_43sdp"
+                android:layout_toStartOf="@+id/rightArrowIv"
+                android:src="@drawable/left_arrow_img"
+                android:tint="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_below="@+id/dateTv"
+                android:layout_marginTop="@dimen/_18sdp">
+
+                <com.example.gogasrider.Customs.BoldText
+                    android:id="@+id/sTv"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@drawable/grey_bg"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="@color/viewEarningScreenTvBg1"
+                    android:textSize="@dimen/_15sdp" />
+
+                <com.example.gogasrider.Customs.ThinText
+                    android:id="@+id/siddleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Siddle Marker"
+                    android:layout_toEndOf="@+id/sTv"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"/>
+                <com.example.gogasrider.Customs.ThinText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 Mar 2021"
+                    android:layout_toEndOf="@+id/sTv"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_below="@id/siddleTv"/>
+                <com.example.gogasrider.Customs.ThinText
+                    android:id="@+id/dollarTv1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$160"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/viewEarningScreenTvBg"/>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
