@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color">
 
     <ImageView
         android:id="@+id/back_wd"
@@ -9,13 +10,18 @@
         android:layout_height="@dimen/_35sdp"
         android:layout_marginLeft="@dimen/_11sdp"
         android:layout_marginTop="@dimen/_25sdp"
-        android:src="@drawable/back_arrow_img" />
+        android:src="@drawable/back_arrow_img"
+        android:tint="@color/arrow_tint_color" />
 
     <ScrollView
         android:id="@+id/main_scroll_wd"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/back_wd">
+        android:layout_below="@id/back_wd"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -42,7 +48,7 @@
                         android:textSize="@dimen/_12sdp" />
 
                     <com.example.gogasrider.Customs.ThinText
-                        android:id="@+id/history_wd"
+                        android:id="@+id/viewEarningTv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -190,19 +196,35 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <com.example.gogasrider.Customs.ThinText
-                    android:id="@+id/add_card_wd"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_38sdp"
-                    android:layout_marginLeft="@dimen/_14sdp"
-                    android:layout_marginTop="@dimen/_50sdp"
-                    android:layout_marginRight="@dimen/_14sdp"
-                    android:background="@drawable/rounded_doted_white_img"
-                    android:gravity="center"
-                    android:text="Add New Card"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_9sdp" />
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_marginRight="@dimen/_15sdp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:scaleX="1"
+                        android:src="@drawable/rounded_doted_white_img"
+                        android:tint="@color/black" />
+
+                    <com.example.gogasrider.Customs.ThinText
+                        android:id="@+id/add_card_wd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:layout_marginRight="@dimen/_14sdp"
+                        android:gravity="center"
+                        android:text="Add New Card"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp" />
+
+
+                </RelativeLayout>
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>

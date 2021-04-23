@@ -2,21 +2,20 @@ package com.example.gogasrider
 
 
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.Color.YELLOW
 import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.view.View
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.android.synthetic.main.activity_confirm_ride_screen.*
+import kotlinx.android.synthetic.main.activity_confirm_ride_screen.backArrowIv
 import kotlinx.android.synthetic.main.activity_home_slider.*
+import kotlinx.android.synthetic.main.activity_login_screen.*
 
 
 class ConfirmRideScreen : AppCompatActivity(), OnMapReadyCallback {
@@ -61,7 +60,7 @@ class ConfirmRideScreen : AppCompatActivity(), OnMapReadyCallback {
         val word: Spannable = SpannableString("On the way to ")
 
         word.setSpan(
-            ForegroundColorSpan(Color.BLACK),
+            ForegroundColorSpan(ContextCompat.getColor(this, R.color.black)),
             0,
             word.length,
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
@@ -83,7 +82,7 @@ class ConfirmRideScreen : AppCompatActivity(), OnMapReadyCallback {
         val wordThree: Spannable = SpannableString("Home ")
 
         wordThree.setSpan(
-            ForegroundColorSpan(Color.BLACK),
+            ForegroundColorSpan(ContextCompat.getColor(this, R.color.black)),
             0,
             wordThree.length,
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
@@ -92,7 +91,18 @@ class ConfirmRideScreen : AppCompatActivity(), OnMapReadyCallback {
     }
 
     fun listeners() {
+        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+
         trackRideBtn.setOnClickListener(View.OnClickListener {
+            startActivity(
+                Intent(
+                    this@ConfirmRideScreen,
+                    TrackScreen::class.java
+                )
+            )
+        })
+
+        chatImg.setOnClickListener(View.OnClickListener {
             startActivity(
                 Intent(
                     this@ConfirmRideScreen,

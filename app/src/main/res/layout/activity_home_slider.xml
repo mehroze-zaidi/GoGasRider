@@ -6,13 +6,14 @@
     android:background="@drawable/circles">
 
     <ImageView
-        android:id="@+id/flipMenuIv"
+        android:id="@+id/sliderMenuIv"
         android:layout_width="@dimen/_30sdp"
         android:layout_height="@dimen/_30sdp"
         android:layout_alignParentStart="true"
         android:layout_marginStart="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_30sdp"
-        android:src="@drawable/flip_menu_icon" />
+        android:src="@drawable/flip_menu_icon"
+        android:tint="@color/black" />
 
     <ImageView
         android:id="@+id/profilePic2Iv"
@@ -26,9 +27,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/flipMenuIv"
-        android:layout_marginTop="0dp"
-        android:layout_above="@+id/logoutBtn">
+        android:layout_above="@+id/logoutBtn"
+        android:layout_below="@+id/sliderMenuIv"
+        android:layout_marginTop="0dp">
 
 
         <RelativeLayout
@@ -92,7 +93,7 @@
                 android:gravity="center_vertical"
                 android:text="@string/Notification"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_13sdp"/>
+                android:textSize="@dimen/_13sdp" />
 
             <com.example.gogasrider.Customs.ThinText
                 android:id="@+id/termAndConditionTv"
@@ -104,7 +105,7 @@
                 android:gravity="center_vertical"
                 android:text="@string/TermCondition"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_13sdp"/>
+                android:textSize="@dimen/_13sdp" />
 
             <com.example.gogasrider.Customs.ThinText
                 android:id="@+id/privacyPolicyTv"
@@ -116,7 +117,27 @@
                 android:gravity="center_vertical"
                 android:text="@string/privacyPolicy"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_13sdp"/>
+                android:textSize="@dimen/_13sdp" />
+
+            <Switch
+                android:id="@+id/darkModeSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/privacyPolicyTv"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <com.example.gogasrider.Customs.ThinText
+                android:id="@+id/switchTextTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/privacyPolicyTv"
+                android:layout_toEndOf="@+id/darkModeSwitch"
+                android:text=" Dark Mode"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_18sdp"/>
+
 
         </RelativeLayout>
 

@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color">
 
     <ImageView
         android:id="@+id/backArrowIv"
@@ -9,7 +10,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_40sdp"
-        android:src="@drawable/back_arrow_img" />
+        android:src="@drawable/back_arrow_img"
+        android:tint="@color/arrow_tint_color" />
 
 
     <ImageView
@@ -20,7 +22,8 @@
         android:layout_marginStart="@dimen/_90sdp"
         android:layout_marginLeft="@dimen/_80sdp"
         android:scaleType="fitEnd"
-        android:src="@drawable/top_curve_img" />
+        android:src="@drawable/top_curve_img"
+        android:tint="@color/top_curve_tint_color" />
 
     <com.example.gogasrider.Customs.BoldText
         android:layout_width="wrap_content"
@@ -170,29 +173,29 @@
                     android:id="@+id/termAndConditionTv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/_9ssp"
                     android:layout_toEndOf="@+id/privacyPolicyCheckBox"
                     android:text=" Term and Condition"
-                    android:textColor="@color/yellow" />
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/_9ssp" />
 
                 <com.example.gogasrider.Customs.ThinText
                     android:id="@+id/textView4"
-                    android:textSize="@dimen/_9sdp"
-
                     android:layout_width="wrap_content"
+
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@id/termAndConditionTv"
-                    android:text=" and" />
+                    android:text=" and"
+                    android:textSize="@dimen/_9sdp" />
 
                 <com.example.gogasrider.Customs.ThinText
                     android:id="@+id/privacyPolicyTv"
-                    android:textSize="@dimen/_9ssp"
-
                     android:layout_width="wrap_content"
+
                     android:layout_height="wrap_content"
-                    android:text=" Privacy Policy"
                     android:layout_toEndOf="@id/textView4"
-                    android:textColor="@color/yellow" />
+                    android:text=" Privacy Policy"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/_9ssp" />
 
 
             </RelativeLayout>
@@ -214,7 +217,8 @@
         android:text="@string/doYouWantToBuyTanks"
         android:textColor="@color/black"
         android:textSize="@dimen/_10sdp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_5sdp"/>
 
     <Button
         android:id="@+id/signUpBtn"

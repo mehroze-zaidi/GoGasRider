@@ -13,7 +13,9 @@ import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.android.synthetic.main.activity_chat.*
 import kotlinx.android.synthetic.main.activity_chat.mic_c
 import kotlinx.android.synthetic.main.activity_home_slider.*
+import kotlinx.android.synthetic.main.activity_login_screen.*
 import kotlinx.android.synthetic.main.activity_track_screen.*
+import kotlinx.android.synthetic.main.activity_track_screen.backArrowIv
 
 class TrackScreen : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var mMap: GoogleMap
@@ -50,5 +52,8 @@ class TrackScreen : AppCompatActivity(), OnMapReadyCallback {
                 )
             )
         })
+
+        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+
     }
 }

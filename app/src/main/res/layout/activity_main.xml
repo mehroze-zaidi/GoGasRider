@@ -60,7 +60,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="@dimen/_39sdp"
-            android:background="#50DDBC"
+            android:background="@color/get_started_btn_color"
             android:text="@string/Get_Started"
             android:textColor="@android:color/white" />
 
@@ -75,6 +75,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="@dimen/_45sdp"
         android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:text="Ready to earn? Open the driver app"
         android:textColor="@android:color/white"
         android:textSize="@dimen/_8ssp" />

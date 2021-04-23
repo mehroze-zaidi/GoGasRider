@@ -15,6 +15,22 @@
     <color name="cardTextColor">#3D6670</color>
     <color name="viewEarningScreenTvBg">#19B832</color>
     <color name="viewEarningScreenTvBg1">#005CEE</color>
+    <color name="screen_bg_color">#FFFFFF</color>
+    <color name="light_yellow">#F4E092</color>
+    <color name="edit_text_bg_color">#F2F3F7</color>
+    <color name="top_curve_tint_color">#FFCC00</color>
+    <color name="arrow_tint_color">#000000</color>
+    <color name="otp_screen_desc_color">#7A7A7A</color>
+    <color name="privacy_policy_text_color">#3F414E</color>
+    <color name="button_bg_color">#FFCC00</color>
+    <color name="get_started_btn_color">#50DDBC</color>
+    <color name="lighter_grey1">#C1C0BB</color>
+    <color name="light_black">#000000</color>
+    <color name="white1">#FFFFFF</color>
+    <color name="waiting_screen_bg_color">#FFCC00</color>
+
+
+
 
 
     <!-- color int as #AARRGGBB (alpha, red, green, blue) -->

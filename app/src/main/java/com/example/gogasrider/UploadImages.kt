@@ -4,9 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import kotlinx.android.synthetic.main.activity_home_alpha_screen.*
-import kotlinx.android.synthetic.main.activity_home_alpha_screen.uploadTankAlphaIv
+import kotlinx.android.synthetic.main.activity_login_screen.*
 import kotlinx.android.synthetic.main.activity_upload_images.*
+import kotlinx.android.synthetic.main.activity_upload_images.backArrowIv
 
 class UploadImages : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,9 +20,13 @@ class UploadImages : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@UploadImages,
-                    HomeSlider::class.java
+                    HomeScreen::class.java
                 )
             )
         })
+
+        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+
+
     }
 }

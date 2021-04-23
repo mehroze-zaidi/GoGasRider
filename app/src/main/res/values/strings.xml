@@ -109,5 +109,7 @@ see you soon or you can buy tank</string>
     <string name="updateWallet">Update Wallet</string>
     <string name="viewEarning">View Earning </string>
     <string name="EarningIn">Earning in MArch </string>
+    <string name="preference_file_key">"state"</string>
+
 
 </resources>

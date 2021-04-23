@@ -21,5 +21,6 @@ class WaitingScreen : AppCompatActivity() {
                 startActivity(Intent(this@WaitingScreen, HomeScreen::class.java))
 
             })
+        waitingBackArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
     }
 }

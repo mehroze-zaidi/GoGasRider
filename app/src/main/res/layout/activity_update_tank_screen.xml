@@ -11,7 +11,8 @@
         android:layout_height="@dimen/_35sdp"
         android:layout_marginLeft="@dimen/_11sdp"
         android:layout_marginTop="@dimen/_25sdp"
-        android:src="@drawable/back_arrow_img" />
+        android:src="@drawable/back_arrow_img"
+        android:tint="@color/arrow_tint_color"/>
 
     <com.example.gogasrider.Customs.BoldText
         android:id="@+id/title_pi"

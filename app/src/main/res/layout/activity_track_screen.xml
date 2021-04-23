@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/screen_bg_color"
     tools:context=".ConfirmRideScreen">
 
     <ScrollView
@@ -23,7 +23,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginLeft="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_40sdp"
-                android:src="@drawable/back_arrow_img" />
+                android:src="@drawable/back_arrow_img"
+                android:tint="@color/arrow_tint_color" />
 
 
             <fragment
@@ -40,15 +41,16 @@
                 tools:context=".MapsActivity" />
 
 
-
         </RelativeLayout>
 
 
     </ScrollView>
-<View
-    android:id="@+id/view"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/_20sdp"
-    android:layout_alignParentBottom="true"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/screen_bg_color" />
 
 </RelativeLayout>

@@ -4,7 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_login_screen.*
 import kotlinx.android.synthetic.main.activity_sign_up_screen.*
+import kotlinx.android.synthetic.main.activity_sign_up_screen.backArrowIv
 
 
 class SignUpScreen : AppCompatActivity() {
@@ -32,6 +34,8 @@ class SignUpScreen : AppCompatActivity() {
 
 
         })
+        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+
     }
 
 

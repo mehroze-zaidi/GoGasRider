@@ -1,13 +1,26 @@
 package com.example.gogasrider
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.SharedPreferences
 import android.os.Bundle
-import android.view.View
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import com.jakewharton.rxbinding2.view.RxView
+import io.reactivex.disposables.Disposable
+import io.reactivex.functions.Consumer
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_sign_up_screen.*
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
+
+    var isFromChecked = false
+    var isFromSharedPreferences = false
+    override fun onStart() {
+        super.onStart()
+        setDarkMode()
+
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,13 +32,36 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun listeners() {
-        getStartedBtn.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this@MainActivity, LoginScreen::class.java))
-        })
+        val d: Disposable = RxView.clicks(getStartedBtn).throttleFirst(10000, TimeUnit.MILLISECONDS)
+            .subscribe(object : Consumer<Any?> {
+                override fun accept(o: Any?) {
+                    Toast.makeText(applicationContext, "Button clicked", Toast.LENGTH_SHORT).show()
+                }
+            })
+
+//        getStartedBtn.setOnClickListener(View.OnClickListener {
+//            startActivity(Intent(this@MainActivity, LoginScreen::class.java))
+//        })
+    }
+
+    fun setDarkMode() {
+        if (!isFromChecked) {
+            val sharedPref: SharedPreferences = applicationContext.getSharedPreferences(
+                "stateKey",
+                MODE_PRIVATE
+            )
+            val state = sharedPref.getInt("state", -1)
+            if (state == 1) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+
+                // delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_YES
+                isFromSharedPreferences = true
+            }
+        }
     }
 
 
-//    override fun onWindowFocusChanged(hasFocus: Boolean) {
+    //    override fun onWindowFocusChanged(hasFocus: Boolean) {
 //        super.onWindowFocusChanged(hasFocus)
 //        if (hasFocus) hideSystemUI()
 //    }
@@ -51,4 +87,21 @@ class MainActivity : AppCompatActivity() {
 //                or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
 //                or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
 //    }
+//    override fun onConfigurationChanged(newConfig: Configuration) {
+//        Log.d("TAG", "onConfigurationChanged: called")
+//        val currentNightMode: Int = newConfig.uiMode and Configuration.UI_MODE_NIGHT_MASK
+//        when (currentNightMode) {
+//            Configuration.UI_MODE_NIGHT_NO -> {
+//                Toast.makeText(applicationContext, " light mode", Toast.LENGTH_SHORT).show()
+//            }
+//            Configuration.UI_MODE_NIGHT_YES -> {
+//                Log.d("TAG", "onConfigurationChanged: yes called")
+//
+//                delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_NO
+//                Toast.makeText(applicationContext, " dark mode", Toast.LENGTH_SHORT).show()
+//
+//            }
+//        }
+//    }
+
 }
