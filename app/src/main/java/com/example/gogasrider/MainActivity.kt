@@ -32,12 +32,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun listeners() {
-        val d: Disposable = RxView.clicks(getStartedBtn).throttleFirst(100, TimeUnit.MILLISECONDS)
-            .subscribe(object : Consumer<Any?> {
-                override fun accept(o: Any?) {
-                    Toast.makeText(applicationContext, "Button clicked", Toast.LENGTH_SHORT).show()
-                }
-            })
+        //using Rx
+//        val d: Disposable = RxView.clicks(getStartedBtn).throttleFirst(100, TimeUnit.MILLISECONDS)
+//            .subscribe(object : Consumer<Any?> {
+//                override fun accept(o: Any?) {
+//                    Toast.makeText(applicationContext, "Button clicked", Toast.LENGTH_SHORT).show()
+//                }
+//            })
 
 //        getStartedBtn.setOnClickListener(View.OnClickListener {
 //            startActivity(Intent(this@MainActivity, LoginScreen::class.java))
