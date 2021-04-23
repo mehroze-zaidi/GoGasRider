@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun listeners() {
-        val d: Disposable = RxView.clicks(getStartedBtn).throttleFirst(10000, TimeUnit.MILLISECONDS)
+        val d: Disposable = RxView.clicks(getStartedBtn).throttleFirst(100, TimeUnit.MILLISECONDS)
             .subscribe(object : Consumer<Any?> {
                 override fun accept(o: Any?) {
                     Toast.makeText(applicationContext, "Button clicked", Toast.LENGTH_SHORT).show()
