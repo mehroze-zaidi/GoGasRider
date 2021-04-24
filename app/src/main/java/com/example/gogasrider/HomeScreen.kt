@@ -55,6 +55,8 @@ class HomeScreen : AppCompatActivity() {
         viewWalletTv.setOnClickListener(View.OnClickListener {
             startActivity(Intent(this@HomeScreen, Wallet::class.java))
         })
-
+        profilePicIv.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this@HomeScreen, ProfileScreen::class.java))
+        })
     }
 }

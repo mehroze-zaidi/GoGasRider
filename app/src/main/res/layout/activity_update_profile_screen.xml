@@ -6,7 +6,7 @@ android:background="@color/screen_bg_color"
     >
 
     <ImageView
-        android:id="@+id/back_pi"
+        android:id="@+id/updateProfileBackArrowIv"
         android:layout_width="@dimen/_45sdp"
         android:layout_height="@dimen/_35sdp"
         android:layout_marginLeft="@dimen/_11sdp"
@@ -18,7 +18,7 @@ android:background="@color/screen_bg_color"
         android:id="@+id/title_pi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/back_pi"
+        android:layout_below="@+id/updateProfileBackArrowIv"
         android:layout_marginLeft="@dimen/_14sdp"
         android:layout_marginTop="@dimen/_22sdp"
         android:text="Update Personal Information"

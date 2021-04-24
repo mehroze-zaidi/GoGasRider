@@ -24,7 +24,7 @@ class Wallet : AppCompatActivity() {
                 )
             )
         })
-        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+        WalletBackArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
 
     }
 

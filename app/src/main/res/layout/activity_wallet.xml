@@ -5,7 +5,7 @@
     android:background="@color/screen_bg_color">
 
     <ImageView
-        android:id="@+id/back_wd"
+        android:id="@+id/WalletBackArrowIv"
         android:layout_width="@dimen/_45sdp"
         android:layout_height="@dimen/_35sdp"
         android:layout_marginLeft="@dimen/_11sdp"
@@ -17,7 +17,7 @@
         android:id="@+id/main_scroll_wd"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/back_wd"
+        android:layout_below="@id/WalletBackArrowIv"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="0dp"

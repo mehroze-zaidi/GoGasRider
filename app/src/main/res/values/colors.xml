@@ -28,6 +28,7 @@
     <color name="light_black">#000000</color>
     <color name="white1">#FFFFFF</color>
     <color name="waiting_screen_bg_color">#FFCC00</color>
+    <color name="request_screen_bg_color">#FFCC00</color>
 
 
 

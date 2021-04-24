@@ -25,7 +25,7 @@ class UpdateProfileScreen : AppCompatActivity() {
                 )
             )
         })
-        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+        updateProfileBackArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
 
     }
 

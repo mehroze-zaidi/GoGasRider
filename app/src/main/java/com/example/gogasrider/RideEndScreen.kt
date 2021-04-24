@@ -15,14 +15,7 @@ class RideEndScreen : AppCompatActivity() {
     }
 
     fun listeners() {
-        dollarTv.setOnClickListener(View.OnClickListener {
-            startActivity(
-                Intent(
-                    this@RideEndScreen,
-                    ProfileScreen::class.java
-                )
-            )
-        })
+
     }
 
 }

@@ -25,13 +25,7 @@
     <color name="lighter_grey1">#FFFFFF</color>
     <color name="light_black">#434343</color>
     <color name="waiting_screen_bg_color">#121212</color>
-
-
-
-
-
-
-
+    <color name="request_screen_bg_color">#121212</color>
 
 
     <!-- color int as #AARRGGBB (alpha, red, green, blue) -->

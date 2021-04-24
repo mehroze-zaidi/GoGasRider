@@ -17,7 +17,7 @@ class ProfileScreen : AppCompatActivity() {
 
     fun listeners() {
 
-        personalinfo.setOnClickListener(View.OnClickListener {
+        updatePersonalInfoTv.setOnClickListener(View.OnClickListener {
             startActivity(
                 Intent(
                     this@ProfileScreen,
@@ -26,7 +26,7 @@ class ProfileScreen : AppCompatActivity() {
             )
         })
 
-        tankInfo.setOnClickListener(View.OnClickListener {
+        updateTankInfoTv.setOnClickListener(View.OnClickListener {
             startActivity(
                 Intent(
                     this@ProfileScreen,
@@ -35,7 +35,7 @@ class ProfileScreen : AppCompatActivity() {
             )
         })
 
-        updateWallet.setOnClickListener(View.OnClickListener {
+        updateWalletTv.setOnClickListener(View.OnClickListener {
             startActivity(
                 Intent(
                     this@ProfileScreen,
@@ -43,7 +43,7 @@ class ProfileScreen : AppCompatActivity() {
                 )
             )
         })
-        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+        profileBackArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
 
 
     }

@@ -14,19 +14,19 @@
 
 
             <ImageView
-                android:id="@+id/profileBack"
+                android:id="@+id/profileBackArrowIv"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_35sdp"
                 android:layout_marginLeft="@dimen/_11sdp"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:src="@drawable/back_arrow_img"
-                android:tint="@color/arrow_tint_color"/>
+                android:tint="@color/arrow_tint_color" />
 
             <com.example.gogasrider.Customs.BoldText
                 android:id="@+id/profileTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/profileBack"
+                android:layout_below="@+id/profileBackArrowIv"
                 android:layout_marginLeft="@dimen/_14sdp"
                 android:layout_marginTop="@dimen/_22sdp"
                 android:fontFamily="@font/montserrat"
@@ -111,6 +111,7 @@
                             android:orientation="horizontal">
 
                             <com.example.gogasrider.Customs.ThinText
+                                android:id="@+id/updatePersonalInfoTv"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentStart="true"
@@ -147,6 +148,7 @@
                             android:orientation="horizontal">
 
                             <com.example.gogasrider.Customs.ThinText
+                                android:id="@+id/updateTankInfoTv"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentStart="true"
@@ -183,6 +185,7 @@
                             android:orientation="horizontal">
 
                             <com.example.gogasrider.Customs.ThinText
+                                android:id="@+id/updateWalletTv"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentStart="true"

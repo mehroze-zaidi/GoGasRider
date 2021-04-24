@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.CompoundButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import kotlinx.android.synthetic.main.activity_home_screen.*
 import kotlinx.android.synthetic.main.activity_home_slider.*
 import kotlinx.android.synthetic.main.activity_upload_images.*
 
@@ -27,10 +28,10 @@ class HomeSlider : AppCompatActivity() {
         setContentView(R.layout.activity_home_slider)
         listeners()
 
-//        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.Q) {
-//            darkModeSwitch.visibility = View.GONE
-//            switchTextTv.visibility = View.GONE
-//        }
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.Q) {
+            darkModeSwitch.visibility = View.GONE
+            switchTextTv.visibility = View.GONE
+        }
 
 
     }
@@ -125,6 +126,13 @@ class HomeSlider : AppCompatActivity() {
                     HomeScreen::class.java
                 )
             )
+        })
+        profilePic2Iv.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this@HomeSlider, ProfileScreen::class.java))
+        })
+
+        notificationTv.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this@HomeSlider, RequestScreen::class.java))
         })
 
 
