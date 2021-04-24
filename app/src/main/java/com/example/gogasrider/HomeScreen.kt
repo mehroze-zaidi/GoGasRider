@@ -3,11 +3,7 @@ package com.example.gogasrider
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.jakewharton.rxbinding2.view.RxView
-import io.reactivex.disposables.Disposable
-import io.reactivex.functions.Consumer
 import kotlinx.android.synthetic.main.activity_home_screen.*
 import kotlinx.android.synthetic.main.activity_home_slider.*
 
@@ -21,21 +17,21 @@ class HomeScreen : AppCompatActivity() {
 
     fun listeners() {
 
-        val d: Disposable = RxView.clicks(uploadTankAlphaIv).subscribe(object : Consumer<Any?> {
-            override fun accept(o: Any?) {
-                Toast.makeText(applicationContext, "Button clicked", Toast.LENGTH_SHORT).show()
-            }
-        })
-
-
-//        uploadTankAlphaIv.setOnClickListener(View.OnClickListener {
-//            startActivity(
-//                Intent(
-//                    this@HomeScreen,
-//                    UploadImages::class.java
-//                )
-//            )
+//        val d: Disposable = RxView.clicks(uploadTankAlphaIv).subscribe(object : Consumer<Any?> {
+//            override fun accept(o: Any?) {
+//                Toast.makeText(applicationContext, "Button clicked", Toast.LENGTH_SHORT).show()
+//            }
 //        })
+
+
+        uploadTankAlphaIv.setOnClickListener(View.OnClickListener {
+            startActivity(
+                Intent(
+                    this@HomeScreen,
+                    UploadImages::class.java
+                )
+            )
+        })
 
         infoIv.setOnClickListener(View.OnClickListener {
             black_Shade.visibility = View.VISIBLE

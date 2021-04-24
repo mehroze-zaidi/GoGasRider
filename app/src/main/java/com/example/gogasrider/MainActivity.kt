@@ -1,7 +1,9 @@
 package com.example.gogasrider
 
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -32,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun listeners() {
-        //using Rx
+        //using Rx View clicks
 //        val d: Disposable = RxView.clicks(getStartedBtn).throttleFirst(100, TimeUnit.MILLISECONDS)
 //            .subscribe(object : Consumer<Any?> {
 //                override fun accept(o: Any?) {
@@ -40,9 +42,9 @@ class MainActivity : AppCompatActivity() {
 //                }
 //            })
 
-//        getStartedBtn.setOnClickListener(View.OnClickListener {
-//            startActivity(Intent(this@MainActivity, LoginScreen::class.java))
-//        })
+        getStartedBtn.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this@MainActivity, LoginScreen::class.java))
+        })
     }
 
     fun setDarkMode() {
