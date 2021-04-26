@@ -1,12 +1,8 @@
 package com.example.gogasrider
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_chat.*
-import kotlinx.android.synthetic.main.activity_home_slider.*
-import kotlinx.android.synthetic.main.activity_login_screen.*
 
 class Chat : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,15 +12,18 @@ class Chat : AppCompatActivity() {
     }
 
     fun listeners() {
-        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+        chat_back_arrow_iv.setOnClickListener() {
+            onBackPressed()
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
 
-        mic_c.setOnClickListener(View.OnClickListener {
-            startActivity(
-                Intent(
-                    this@Chat,
-                    TrackScreen::class.java
-                )
-            )
-        })
+
+        }
+
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+
     }
 }

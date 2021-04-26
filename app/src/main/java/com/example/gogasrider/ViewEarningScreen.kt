@@ -13,7 +13,10 @@ class ViewEarningScreen : AppCompatActivity() {
     }
 
     fun listeners() {
-        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+        chatBackArrowIv.setOnClickListener(View.OnClickListener {
+            onBackPressed()
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+        })
 
     }
 }

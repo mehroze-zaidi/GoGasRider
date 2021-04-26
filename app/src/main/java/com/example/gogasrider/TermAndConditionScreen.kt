@@ -13,7 +13,7 @@ class TermAndConditionScreen : AppCompatActivity() {
     }
 
     fun listeners() {
-        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+        chatBackArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
 
     }
 }

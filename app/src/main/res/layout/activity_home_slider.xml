@@ -13,7 +13,8 @@
         android:layout_marginStart="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_30sdp"
         android:src="@drawable/flip_menu_icon"
-        android:tint="@color/black" />
+        android:tint="@color/black"
+        android:foreground="?android:selectableItemBackground"/>
 
     <ImageView
         android:id="@+id/profilePic2Iv"
@@ -22,7 +23,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="@dimen/_30sdp"
         android:layout_marginEnd="@dimen/_15sdp"
-        android:src="@drawable/profile_pic" />
+        android:src="@drawable/profile_pic"
+        android:transitionName="profilePicIv" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -57,7 +59,8 @@
                 android:gravity="center_vertical"
                 android:text="@string/TankInformation"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_13sdp" />
+                android:textSize="@dimen/_13sdp"
+                android:transitionName="setUpYourProfileTv" />
 
             <com.example.gogasrider.Customs.ThinText
                 android:id="@+id/walletTv"
@@ -81,7 +84,8 @@
                 android:gravity="center_vertical"
                 android:text="@string/Profile"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_13sdp" />
+                android:textSize="@dimen/_13sdp"
+                android:transitionName="tankOverViewTv" />
 
             <com.example.gogasrider.Customs.ThinText
                 android:id="@+id/notificationTv"
@@ -105,7 +109,8 @@
                 android:gravity="center_vertical"
                 android:text="@string/TermCondition"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_13sdp" />
+                android:textSize="@dimen/_13sdp"
+                android:transitionName="termAndCondition" />
 
             <com.example.gogasrider.Customs.ThinText
                 android:id="@+id/privacyPolicyTv"
@@ -124,19 +129,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/privacyPolicyTv"
-                android:layout_marginBottom="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_15sdp"/>
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp" />
 
             <com.example.gogasrider.Customs.ThinText
                 android:id="@+id/switchTextTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/privacyPolicyTv"
+                android:layout_marginTop="@dimen/_18sdp"
                 android:layout_toEndOf="@+id/darkModeSwitch"
                 android:text=" Dark Mode"
-                android:textColor="@color/black"
-                android:layout_marginTop="@dimen/_18sdp"/>
+                android:textColor="@color/black" />
 
 
         </RelativeLayout>
@@ -144,7 +149,7 @@
 
     </ScrollView>
 
-    <Button
+    <com.example.gogasrider.Customs.ThinText
         android:id="@+id/logoutBtn"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
@@ -154,8 +159,10 @@
         android:layout_marginEnd="@dimen/_15sdp"
         android:layout_marginBottom="@dimen/_30sdp"
         android:background="@drawable/yellow_btn_bg"
-        android:fontFamily="@font/montserrat"
+        android:gravity="center"
         android:text="@string/logOut"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12ssp"
+        android:transitionName="continueBtn" />
 
 </RelativeLayout>

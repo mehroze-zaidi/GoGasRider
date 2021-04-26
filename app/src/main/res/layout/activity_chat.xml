@@ -7,19 +7,20 @@
     tools:context=".Chat">
 
     <ImageView
-        android:id="@+id/back_c"
+        android:id="@+id/chat_back_arrow_iv"
         android:layout_width="@dimen/_45sdp"
         android:layout_height="@dimen/_35sdp"
         android:layout_marginLeft="@dimen/_11sdp"
         android:layout_marginTop="@dimen/_25sdp"
         android:src="@drawable/back_arrow_img"
-        android:tint="@color/arrow_tint_color" />
+        android:tint="@color/arrow_tint_color"
+        android:foreground="@drawable/ripple"/>
 
     <LinearLayout
         android:id="@+id/title_c"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/back_c"
+        android:layout_below="@+id/chat_back_arrow_iv"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_18sdp"
         android:orientation="horizontal">

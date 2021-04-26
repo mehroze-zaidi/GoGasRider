@@ -1,17 +1,14 @@
 package com.example.gogasrider
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
+import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import com.jakewharton.rxbinding2.view.RxView
-import io.reactivex.disposables.Disposable
-import io.reactivex.functions.Consumer
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 //// status bar is hidden, so hide that too if necessary.
 //        actionBar?.hide()
         listeners()
+        loadAnim()
     }
 
     fun listeners() {
@@ -42,9 +40,21 @@ class MainActivity : AppCompatActivity() {
 //                }
 //            })
 
-        getStartedBtn.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this@MainActivity, LoginScreen::class.java))
-        })
+        getStartedBtn.setOnClickListener {
+
+
+            val animOn = android.util.Pair.create<View, String>(getStartedBtn, "continueBtn")
+            val activityOptionsCompat =
+                ActivityOptions.makeSceneTransitionAnimation(
+                    this, animOn
+                )
+//                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+
+            startActivity(
+                Intent(this@MainActivity, LoginScreen::class.java),
+                activityOptionsCompat.toBundle()
+            )
+        }
     }
 
     fun setDarkMode() {
@@ -106,5 +116,9 @@ class MainActivity : AppCompatActivity() {
 //            }
 //        }
 //    }
-
+    fun loadAnim() {
+        splash_text1.setAnimation(AnimationUtils.loadAnimation(this, R.anim.splash_left_img1))
+        splashText2.setAnimation(AnimationUtils.loadAnimation(this, R.anim.splash_left_img2))
+        getStartedBtn.setAnimation(AnimationUtils.loadAnimation(this, R.anim.splash_left_img3))
+    }
 }

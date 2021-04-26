@@ -11,11 +11,10 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.android.synthetic.main.activity_chat.*
-import kotlinx.android.synthetic.main.activity_chat.mic_c
 import kotlinx.android.synthetic.main.activity_home_slider.*
 import kotlinx.android.synthetic.main.activity_login_screen.*
 import kotlinx.android.synthetic.main.activity_track_screen.*
-import kotlinx.android.synthetic.main.activity_track_screen.backArrowIv
+import kotlinx.android.synthetic.main.activity_track_screen.chatBackArrowIv
 
 class TrackScreen : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var mMap: GoogleMap
@@ -44,16 +43,20 @@ class TrackScreen : AppCompatActivity(), OnMapReadyCallback {
     }
 
     fun listeners() {
-        backArrowIv.setOnClickListener(View.OnClickListener {
+        chatBackArrowIv.setOnClickListener(View.OnClickListener {
             startActivity(
                 Intent(
                     this@TrackScreen,
-                    RequestScreen::class.java
+                    EmptyState::class.java
                 )
             )
         })
 
-        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
 
     }
 }

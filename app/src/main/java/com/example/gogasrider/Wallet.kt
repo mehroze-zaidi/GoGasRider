@@ -23,8 +23,14 @@ class Wallet : AppCompatActivity() {
                     ViewEarningScreen::class.java
                 )
             )
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+
         })
-        WalletBackArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+        WalletBackArrowIv.setOnClickListener(View.OnClickListener {
+            onBackPressed()
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+
+        })
 
     }
 

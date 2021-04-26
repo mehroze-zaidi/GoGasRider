@@ -1,6 +1,7 @@
 package com.example.gogasrider
 
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -20,17 +21,36 @@ class LoginScreen : AppCompatActivity() {
     }
 
     fun listeners() {
-        continueBtn.setOnClickListener(View.OnClickListener
-        {
-            startActivity(Intent(this@LoginScreen, OTPScreen::class.java))
+        continueBtn.setOnClickListener {
 
-        })
+
+            val animOn = android.util.Pair.create<View, String>(continueBtn, "continueBtn")
+            val animOn1 = android.util.Pair.create<View, String>(textView, "splashBtn")
+            val activityOptionsCompat =
+                ActivityOptions.makeSceneTransitionAnimation(this, animOn, animOn1)
+
+            startActivity(
+                Intent(this@LoginScreen, OTPScreen::class.java),
+                activityOptionsCompat.toBundle()
+            )
+
+        }
 
         signUptTv.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this@LoginScreen, SignUpScreen::class.java))
+
+            val animOn = android.util.Pair.create<View, String>(signUptTv, "signUpTv")
+            val animOn1 = android.util.Pair.create<View, String>(mobNoEt, "mobNoEt")
+            val activityOptionsCompat =
+                ActivityOptions.makeSceneTransitionAnimation(this, animOn, animOn1)
+
+            startActivity(
+                Intent(this@LoginScreen, SignUpScreen::class.java),
+                activityOptionsCompat.toBundle()
+            )
         })
-        backArrowIv.setOnClickListener(View.OnClickListener {
+        chatBackArrowIv.setOnClickListener(View.OnClickListener {
             onBackPressed()
+            overridePendingTransition(R.anim.slide_out_right,R.anim.slide_in_left)
         })
 
 

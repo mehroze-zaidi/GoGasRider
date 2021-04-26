@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login_screen.*
-import kotlinx.android.synthetic.main.activity_login_screen.backArrowIv
+import kotlinx.android.synthetic.main.activity_login_screen.chatBackArrowIv
 import kotlinx.android.synthetic.main.activity_o_t_p_screen.*
 import kotlinx.android.synthetic.main.activity_request_screen.*
 
@@ -26,6 +26,6 @@ class OTPScreen : AppCompatActivity() {
             )
         })
 
-        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+        chatBackArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
     }
 }

@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login_screen.*
-import kotlinx.android.synthetic.main.activity_login_screen.backArrowIv
 import kotlinx.android.synthetic.main.activity_update_profile_screen.*
 import kotlinx.android.synthetic.main.activity_update_profile_screen.update_now_pi
 import kotlinx.android.synthetic.main.activity_update_tank_screen.*

@@ -4,7 +4,9 @@
     android:background="@color/screen_bg_color">
 
     <ImageView
-        android:id="@+id/backArrowIv"
+        android:id="@+id/chatBackArrowIv"
+        android:foreground="@drawable/ripple"
+
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_40sdp"
         android:layout_alignParentStart="true"
@@ -26,14 +28,16 @@
         android:tint="@color/top_curve_tint_color" />
 
     <com.example.gogasrider.Customs.BoldText
+        android:id="@+id/setUpYourProfileTv"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_30sdp"
-        android:layout_below="@+id/backArrowIv"
+        android:layout_below="@+id/chatBackArrowIv"
         android:layout_marginStart="@dimen/_15sdp"
         android:layout_marginTop="29dp"
         android:text="Setup your profile"
         android:textColor="@color/black"
-        android:textSize="@dimen/_15sdp" />
+        android:textSize="@dimen/_15sdp"
+        android:transitionName="signUpTv" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -67,7 +71,8 @@
                     android:hint="@string/fullName"
                     android:inputType="text"
                     android:padding="@dimen/_10sdp"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_12sdp"
+                    android:transitionName="mobNoEt" />
 
                 <EditText
                     android:id="@+id/emailEt"
@@ -152,12 +157,9 @@
                 android:layout_below="@+id/linear2"
                 android:layout_marginStart="@dimen/_12sdp"
                 android:layout_marginEnd="@dimen/_12sdp"
-                android:orientation="horizontal"><![CDATA[
+                android:orientation="horizontal">
 
 
-                />
-
-                ]]>
 
                 <CheckBox
                     android:id="@+id/privacyPolicyCheckBox"
@@ -176,7 +178,8 @@
                     android:layout_toEndOf="@+id/privacyPolicyCheckBox"
                     android:text=" Term and Condition"
                     android:textColor="@color/yellow"
-                    android:textSize="@dimen/_9ssp" />
+                    android:textSize="@dimen/_9ssp"
+                    android:transitionName="termAndCondition" />
 
                 <com.example.gogasrider.Customs.ThinText
                     android:id="@+id/textView4"
@@ -195,7 +198,8 @@
                     android:layout_toEndOf="@id/textView4"
                     android:text=" Privacy Policy"
                     android:textColor="@color/yellow"
-                    android:textSize="@dimen/_9ssp" />
+                    android:textSize="@dimen/_9ssp"
+                    android:transitionName="privacyPolicy" />
 
 
             </RelativeLayout>
@@ -211,14 +215,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginBottom="@dimen/_20sdp"
         android:fontFamily="@font/montserrat"
         android:letterSpacing="0.01"
         android:text="@string/doYouWantToBuyTanks"
         android:textColor="@color/black"
         android:textSize="@dimen/_10sdp"
-        android:textStyle="bold"
-        android:layout_marginTop="@dimen/_5sdp"/>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/signUpBtn"
@@ -230,7 +234,8 @@
         android:background="@drawable/yellow_btn_bg"
         android:fontFamily="@font/montserrat"
         android:text="Sign up "
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:transitionName="signUpBtn" />
 </RelativeLayout>
 
 

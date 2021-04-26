@@ -14,6 +14,8 @@
 
             <ImageView
                 android:id="@+id/waitingBackArrowIv"
+                android:foreground="@drawable/ripple"
+
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_alignParentStart="true"
@@ -32,7 +34,8 @@
                 android:layout_marginTop="47dp"
                 android:text="@string/waiting"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/_18sdp"
+                android:transitionName="setUpYourProfileTv" />
 
 
             <RelativeLayout
@@ -107,7 +110,7 @@
         android:textSize="@dimen/_10sdp"
         android:textStyle="bold" />
 
-    <Button
+    <com.example.gogasrider.Customs.BoldText
         android:id="@+id/homeBtn"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
@@ -115,10 +118,10 @@
         android:layout_marginStart="@dimen/_15sdp"
         android:layout_marginEnd="@dimen/_15sdp"
         android:background="@drawable/yellow_btn_bg"
-        android:fontFamily="@font/montserrat"
+        android:gravity="center"
         android:text="@string/Go_to"
         android:textColor="@android:color/white"
-        android:textStyle="bold" />
+        android:transitionName="signUpBtn" />
 </RelativeLayout>
 
 

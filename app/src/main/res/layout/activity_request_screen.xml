@@ -63,6 +63,7 @@
 
                 <com.example.gogasrider.Customs.BoldText
                     android:id="@+id/skipTv"
+                    android:foreground="?android:selectableItemBackground"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -122,6 +123,7 @@
 
         <Button
             android:id="@+id/acceptBtn"
+            android:foreground="?android:selectableItemBackground"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_above="@id/declineTv"
@@ -137,6 +139,7 @@
 
         <com.example.gogasrider.Customs.BoldText
             android:id="@+id/declineTv"
+            android:foreground="?android:selectableItemBackground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

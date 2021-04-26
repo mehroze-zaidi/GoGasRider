@@ -13,7 +13,7 @@ import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.android.synthetic.main.activity_confirm_ride_screen.*
-import kotlinx.android.synthetic.main.activity_confirm_ride_screen.backArrowIv
+import kotlinx.android.synthetic.main.activity_confirm_ride_screen.chatBackArrowIv
 import kotlinx.android.synthetic.main.activity_home_slider.*
 import kotlinx.android.synthetic.main.activity_login_screen.*
 
@@ -91,7 +91,7 @@ class ConfirmRideScreen : AppCompatActivity(), OnMapReadyCallback {
     }
 
     fun listeners() {
-        backArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
+        chatBackArrowIv.setOnClickListener(View.OnClickListener { onBackPressed() })
 
         trackRideBtn.setOnClickListener(View.OnClickListener {
             startActivity(
@@ -100,6 +100,7 @@ class ConfirmRideScreen : AppCompatActivity(), OnMapReadyCallback {
                     TrackScreen::class.java
                 )
             )
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
         })
 
         chatImg.setOnClickListener(View.OnClickListener {
@@ -109,6 +110,16 @@ class ConfirmRideScreen : AppCompatActivity(), OnMapReadyCallback {
                     Chat::class.java
                 )
             )
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+
+
         })
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+
+
     }
 }

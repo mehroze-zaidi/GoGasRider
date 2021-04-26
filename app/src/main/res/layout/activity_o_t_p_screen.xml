@@ -14,6 +14,7 @@
         android:fontFamily="@font/montserrat"
         android:text="@string/loginButton"
         android:textColor="@android:color/white"
+        android:transitionName="continueBtn"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHeight_percent="0.06"
         app:layout_constraintHorizontal_bias="0.512"
@@ -30,10 +31,10 @@
         android:layout_marginTop="48dp"
         android:letterSpacing="0.01"
         android:text="@string/title"
-
         android:textColor="@color/black"
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
+        android:transitionName="splashBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
@@ -108,7 +109,7 @@
 
 
         <ImageView
-            android:id="@+id/backArrowIv"
+            android:id="@+id/chatBackArrowIv"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_alignParentStart="true"

@@ -4,7 +4,8 @@
     android:background="@color/screen_bg_color">
 
     <ImageView
-        android:id="@+id/backArrowIv"
+        android:id="@+id/chatBackArrowIv"
+        android:foreground="@drawable/ripple"
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_40sdp"
         android:layout_alignParentStart="true"
@@ -17,7 +18,7 @@
         android:id="@+id/viewEarningTv"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_30sdp"
-        android:layout_below="@+id/backArrowIv"
+        android:layout_below="@+id/chatBackArrowIv"
         android:layout_marginStart="@dimen/_15sdp"
         android:layout_marginTop="29dp"
         android:text="@string/viewEarning"

@@ -6,6 +6,7 @@
 
     <ImageView
         android:id="@+id/WalletBackArrowIv"
+        android:foreground="@drawable/ripple"
         android:layout_width="@dimen/_45sdp"
         android:layout_height="@dimen/_35sdp"
         android:layout_marginLeft="@dimen/_11sdp"
@@ -45,12 +46,14 @@
                         android:layout_marginLeft="@dimen/_14sdp"
                         android:text="Wallet"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_12sdp" />
+                        android:textSize="@dimen/_12sdp"
+                        android:transitionName="updateWalletTv" />
 
                     <com.example.gogasrider.Customs.ThinText
                         android:id="@+id/viewEarningTv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:foreground="?android:selectableItemBackground"
                         android:layout_alignParentEnd="true"
                         android:layout_marginRight="@dimen/_14sdp"
                         android:background="@color/lighter_grey"

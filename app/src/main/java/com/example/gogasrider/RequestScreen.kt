@@ -19,10 +19,15 @@ class RequestScreen : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@RequestScreen,
-                    RideEndScreen::class.java
+                    ConfirmRideScreen::class.java
                 )
             )
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         })
     }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
 
+    }
 }

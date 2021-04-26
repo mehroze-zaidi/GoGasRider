@@ -1,9 +1,9 @@
 package com.example.gogasrider
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_empty_state.*
 import kotlinx.android.synthetic.main.activity_home_slider.*
 
@@ -19,10 +19,15 @@ class EmptyState : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@EmptyState,
-                    ConfirmRideScreen::class.java
+                    RideEndScreen::class.java
                 )
             )
         })
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+
     }
 
 }

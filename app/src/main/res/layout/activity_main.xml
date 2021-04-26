@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash_bg">
@@ -9,7 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        android:layout_above="@id/getStartedCv">
+        android:layout_above="@id/getStartedBtn">
+
         <RelativeLayout
 
             android:layout_width="match_parent"
@@ -27,8 +27,8 @@
                 android:layout_width="@dimen/_282sdp"
                 android:layout_height="@dimen/_110sdp"
                 android:layout_below="@id/main_center_space"
-                android:layout_marginTop="@dimen/_250sdp"
                 android:layout_marginStart="-20dp"
+                android:layout_marginTop="@dimen/_250sdp"
                 android:src="@drawable/splash_text1" />
 
             <com.example.gogasrider.Customs.BoldText
@@ -46,26 +46,21 @@
 
     </ScrollView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/getStartedCv"
+
+    <com.example.gogasrider.Customs.ThinText
+        android:id="@+id/getStartedBtn"
         android:layout_width="match_parent"
-        android:layout_marginStart="@dimen/_50sdp"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_39sdp"
         android:layout_above="@+id/splashText3"
-        android:layout_centerHorizontal="true"
-        app:cardCornerRadius="@dimen/_5sdp">
+        android:layout_marginLeft="@dimen/_31sdp"
+        android:layout_marginRight="@dimen/_31sdp"
+        android:background="@drawable/green_btn_bg"
+        android:gravity="center"
+        android:text="@string/Get_Started"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_13sdp"
+        android:transitionName="continueBtn" />
 
-        <Button
-            android:id="@+id/getStartedBtn"
-
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_39sdp"
-            android:background="@color/get_started_btn_color"
-            android:text="@string/Get_Started"
-            android:textColor="@android:color/white" />
-
-
-    </androidx.cardview.widget.CardView>
 
     <com.example.gogasrider.Customs.ThinText
         android:id="@+id/splashText3"
@@ -74,8 +69,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="@dimen/_45sdp"
-        android:layout_marginBottom="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
         android:text="Ready to earn? Open the driver app"
         android:textColor="@android:color/white"
         android:textSize="@dimen/_8ssp" />

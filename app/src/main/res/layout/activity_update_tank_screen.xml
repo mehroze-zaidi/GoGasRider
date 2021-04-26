@@ -16,6 +16,7 @@
 
     <com.example.gogasrider.Customs.BoldText
         android:id="@+id/title_pi"
+        android:transitionName="updateTankInfoTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/updateTankeBackArrowIv"

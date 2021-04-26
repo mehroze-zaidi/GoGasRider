@@ -29,6 +29,7 @@
                     android:layout_marginStart="@dimen/_17sdp"
                     android:layout_marginLeft="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_30sdp"
+                    android:foreground="?android:selectableItemBackground"
                     android:src="@drawable/menu" />
 
                 <com.example.gogasrider.Customs.BoldText
@@ -52,7 +53,8 @@
                     android:layout_marginStart="@dimen/_17sdp"
                     android:text="@string/Active_Balance"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_12sdp"
+                    android:transitionName="activeBalTv" />
 
                 <ImageView
                     android:id="@+id/profilePicIv"
@@ -62,7 +64,8 @@
                     android:layout_marginStart="@dimen/_17sdp"
                     android:layout_marginTop="@dimen/_27sdp"
                     android:layout_marginEnd="@dimen/_7sdp"
-                    android:src="@drawable/profile_pic" />
+                    android:src="@drawable/profile_pic"
+                    android:transitionName="profilePicIv" />
 
                 <ImageView
                     android:id="@+id/bellIv"
@@ -104,9 +107,11 @@
 
 
                 <LinearLayout
+                    android:id="@+id/linear1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:transitionName="signUpBtn"
                     android:weightSum="2">
 
                     <LinearLayout
@@ -245,13 +250,17 @@
                         </RelativeLayout>
 
                         <com.example.gogasrider.Customs.ThinText
+                            android:id="@+id/tankOverViewTv"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_marginStart="@dimen/_10sdp"
                             android:layout_weight="0.5"
                             android:text="@string/tankOverview"
                             android:textColor="@color/light_grey2"
-                            android:textSize="@dimen/_17sdp" />
+                            android:textSize="@dimen/_17sdp"
+                            android:transitionName="setUpYourProfileTv"
+
+                            />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -375,7 +384,8 @@
                     android:layout_marginBottom="@dimen/_30sdp"
                     android:scaleType="fitXY"
                     android:src="@drawable/upload_tank_img"
-                    android:tint="@color/black" />
+                    android:tint="@color/black"
+                    android:transitionName="uploadIv" />
             </RelativeLayout>
 
 
