@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color">
+
+    <ImageView
+        android:id="@+id/chatBackArrowIv"
+        android:foreground="@drawable/ripple"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/back_arrow_img"
+        android:tint="@color/arrow_tint_color"
+        />
+
+
+    <com.example.gogasrider.Customs.BoldText
+        android:id="@+id/termAndConditionHeadingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/chatBackArrowIv"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="47dp"
+        android:text="@string/Notification"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:transitionName="notificationTv"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/signUpBtn"
+        android:layout_below="@+id/termAndConditionHeadingTv"
+        android:fillViewport="true">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_200sdp"
+           android:orientation="vertical"
+           >
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_marginLeft="@dimen/_4sdp"
+               android:layout_marginTop="@dimen/_14sdp"
+               android:layout_marginRight="@dimen/_14sdp"
+               >
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/profileIV"
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/profile_pic"
+                   android:gravity="center"
+                   android:layout_marginLeft="@dimen/_12sdp"
+                   android:textSize="@dimen/_8sdp" />
+
+               <com.example.gogasrider.Customs.ThinText
+                   android:id="@+id/name_title_vh"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/_8sdp"
+                   android:layout_marginTop="@dimen/_13sdp"
+                   android:layout_toRightOf="@+id/profileIV"
+                   android:text="$ 20 from Zeeshan has been success
+-fully transfer to your account"
+                   android:textColor="@color/light_grey"
+                   android:textSize="@dimen/_10sdp" />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_1sdp"
+                   android:background="@color/lighter_grey1"
+                   android:layout_below="@+id/name_title_vh"
+                   android:layout_marginLeft="@dimen/_25sdp"
+                   android:layout_marginRight="@dimen/_25sdp"
+                   android:layout_marginTop="@dimen/_8sdp"/>
+
+
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_marginLeft="@dimen/_4sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_marginRight="@dimen/_14sdp"
+               >
+
+               <ImageView
+                   android:id="@+id/notificationIconIv"
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/notification_icon"
+                   android:gravity="center"
+                   android:layout_marginLeft="@dimen/_12sdp"
+                   android:textSize="@dimen/_8sdp" />
+
+               <com.example.gogasrider.Customs.ThinText
+                   android:id="@+id/tankEmptyIv"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/_8sdp"
+                   android:layout_marginTop="@dimen/_13sdp"
+                   android:layout_toRightOf="@+id/notificationIconIv"
+                   android:text="@string/tankEmpty"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/light_grey"
+                   android:textSize="@dimen/_10sdp" />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_1sdp"
+                   android:background="@color/lighter_grey1"
+                   android:layout_below="@+id/tankEmptyIv"
+                   android:layout_marginLeft="@dimen/_25sdp"
+                   android:layout_marginRight="@dimen/_25sdp"
+                   android:layout_marginTop="@dimen/_15sdp"/>
+
+
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_marginLeft="@dimen/_4sdp"
+               android:layout_marginTop="@dimen/_14sdp"
+               android:layout_marginRight="@dimen/_14sdp"
+               >
+
+               <ImageView
+                   android:id="@+id/cashWalletIv"
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/cash_wallet_icon"
+                   android:gravity="center"
+                   android:layout_marginLeft="@dimen/_12sdp"
+                   android:textSize="@dimen/_8sdp" />
+
+               <com.example.gogasrider.Customs.ThinText
+                   android:id="@+id/cashWalletTv"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/_8sdp"
+                   android:layout_marginTop="@dimen/_13sdp"
+                   android:layout_toRightOf="@+id/cashWalletIv"
+                   android:text="@string/cashWallet"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/light_grey"
+                   android:textSize="@dimen/_10sdp" />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_1sdp"
+                   android:background="@color/lighter_grey1"
+                   android:layout_below="@+id/cashWalletTv"
+                   android:layout_marginLeft="@dimen/_25sdp"
+                   android:layout_marginRight="@dimen/_25sdp"
+                   android:layout_marginTop="@dimen/_15sdp"/>
+
+
+           </RelativeLayout>
+
+
+
+       </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/buyTanksTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="31dp"
+        android:fontFamily="@font/montserrat"
+        android:letterSpacing="0.01"
+        android:text="@string/deny"
+        android:textColor="@color/privacy_policy_text_color"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@+id/buyTanksTv"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/yellow_btn_bg"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/allow"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+</RelativeLayout>
+
+

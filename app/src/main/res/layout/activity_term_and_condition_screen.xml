@@ -10,6 +10,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_40sdp"
+        android:foreground="@drawable/ripple"
         android:src="@drawable/back_arrow_img"
         android:tint="@color/arrow_tint_color" />
 

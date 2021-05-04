@@ -172,9 +172,17 @@ class HomeSlider : AppCompatActivity() {
         })
 
         notificationTv.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this@HomeSlider, RequestScreen::class.java))
-        })
+            val animOn = android.util.Pair.create<View, String>(notificationTv, "notificationTv")
+            val activityOptionsCompat =
+                ActivityOptions.makeSceneTransitionAnimation(this, animOn)
 
+
+
+            startActivity(
+                Intent(this@HomeSlider, NotificationScreen::class.java),
+                activityOptionsCompat.toBundle()
+            )
+        })
 
     }
 

@@ -112,4 +112,9 @@ see you soon or you can buy tank</string>
     <string name="preference_file_key">"state"</string>
 
 
+    //notification screen
+<string name="tankEmpty">Your tank is empty today, DO FILL ASAP</string>
+<string name="cashWallet">Cash your wallet</string>
+
+
 </resources>

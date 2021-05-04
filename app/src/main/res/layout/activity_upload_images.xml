@@ -51,11 +51,22 @@
                 android:hint="@string/noOfGallon"
                 android:paddingStart="@dimen/_6sdp" />
 
-            <ImageView
+            <EditText
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_130sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/montserrat"
+                android:hint="Amount"
+                android:paddingStart="@dimen/_6sdp" />
 
+            <ImageView
+                android:id="@+id/uploadReceiptIv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_230sdp"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:src="@drawable/upload_img" />

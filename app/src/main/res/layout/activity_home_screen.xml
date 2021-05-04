@@ -74,6 +74,7 @@
                     android:layout_marginTop="@dimen/_27sdp"
                     android:layout_marginRight="-22dp"
                     android:layout_toLeftOf="@+id/profilePicIv"
+                    android:foreground="@drawable/ripple"
                     android:src="@drawable/bell_icon" />
 
                 <com.example.gogasrider.Customs.ThinText
